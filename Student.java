@@ -1,30 +1,29 @@
-package student0405;
+package student0503;
 
 public class Student {
-	String name;
-	int grade;
-	int ban;
-	int number;
-	private int weight;
-	private String telephone;
 	
+	private String name;
+	private int grade;
 	
-	String getTelephone() {
-		return telephone;
-	}
-	void setTelephone(String telephone)
+	public void setName(String name)
 	{
-		this.telephone=telephone;
+		this.name=name;
 	}
-	
-	public void eat()
+	public String getName()
 	{
-		weight += 10;
+		return name;
 	}
-	public void run()
+	public void setGrade(int grade)
 	{
-		weight -= 10;
+		this.grade=grade;
 	}
-	
+	public int getGrade()
+	{
+		return grade;
+	}
+	public void print()
+	{
+		System.out.println("학생의 이름은 "+this.name+"이고, "+this.grade+"학년입니다.");
+	}
 
 }
