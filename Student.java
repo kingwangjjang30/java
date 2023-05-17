@@ -1,29 +1,28 @@
-package student0503;
+package student0517;
 
 public class Student {
 	
 	private String name;
 	private int grade;
 	
-	public void setName(String name)
-	{
-		this.name=name;
+	public Student(){
+		
 	}
-	public String getName()
+	public Student(String n)
 	{
-		return name;
+		name=n;
 	}
-	public void setGrade(int grade)
+	public Student(String n, int g)
 	{
-		this.grade=grade;
+		name = n;
+		grade= g;
 	}
-	public int getGrade()
-	{
-		return grade;
-	}
-	public void print()
-	{
-		System.out.println("학생의 이름은 "+this.name+"이고, "+this.grade+"학년입니다.");
+	
+	//생성자 오버로딩
+	
+	
+	public void print() {
+		System.out.println("학생의 이름은 "+name +" 이고"+grade+"학년입니다.");
 	}
 
 }
