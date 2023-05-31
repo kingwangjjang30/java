@@ -1,28 +1,36 @@
-package student0517;
+package leader;
 
 public class Student {
+	String name;
+	String hakbun;
+	String phone;
+	String juso;
+	String major;
 	
-	private String name;
-	private int grade;
-	
-	public Student(){
+	public Student()
+	{
 		
 	}
-	public Student(String n)
+	public Student(String name, String hakbun)
 	{
-		name=n;
+		this.name=name;
+		this.hakbun=hakbun;
 	}
-	public Student(String n, int g)
+	public void study()
 	{
-		name = n;
-		grade= g;
+		System.out.println("ê³µë¶€í•˜ë‹¤.");
 	}
-	
-	//»ı¼ºÀÚ ¿À¹ö·Îµù
-	
-	
-	public void print() {
-		System.out.println("ÇĞ»ıÀÇ ÀÌ¸§Àº "+name +" ÀÌ°í"+grade+"ÇĞ³âÀÔ´Ï´Ù.");
+	public void eat()
+	{
+		System.out.println("ì‹ì‚¬í•˜ë‹¤.");
+	}
+	public void test()
+	{
+		System.out.println("ì‹œí—˜ë³´ë‹¤.");
+	}
+	public void extra_act()
+	{
+		System.out.println("ë™ì•„ë¦¬ í™œë™í•˜ë‹¤.");
 	}
 
 }
